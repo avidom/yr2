@@ -78,14 +78,15 @@ p.nominalBounds = new cjs.Rectangle(-53.8,-30.9,107.6,61.8);
 (lib.Symbol35 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// Layer 1
+	// Layer 1 copy
 	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(img.bird, null, new cjs.Matrix2D(1,0,0,1,-42.1,-55.8)).s().p("AoyInICOxTINyAAIA6C8QA4C4gQA0QgUA7gXBXQgUBOgMAiQgnBshwB4QijBikKA8QjJAticAAQg6AAg0gGg");
+	this.shape.graphics.bf(img.bird, null, new cjs.Matrix2D(0.846,0.533,-0.533,0.846,3.5,-72.1)).s().p("Am8I0Qh5hXjYi9IMwvwILrHYQgCACg2C3Qg2C2giApQinDJimCMQjQCuiqAuQifgEjUiZg");
+	this.shape.setTransform(6.3,-19.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-56.4,-55.8,112.8,111.6);
+p.nominalBounds = new cjs.Rectangle(-72,-91.5,156.6,144.2);
 
 
 (lib.Symbol33 = function(mode,startPosition,loop) {
@@ -1214,7 +1215,7 @@ p.nominalBounds = new cjs.Rectangle(-76.1,-34.9,152.2,69.8);
 
 
 (lib.Symbol34 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 2
 	this.w2 = new lib.Symbol35();
@@ -1229,7 +1230,7 @@ p.nominalBounds = new cjs.Rectangle(-76.1,-34.9,152.2,69.8);
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-93.7,-77.4,173.2,154.9);
+p.nominalBounds = new cjs.Rectangle(-109.3,-113.1,188.8,190.6);
 
 
 (lib.Symbol29 = function(mode,startPosition,loop) {
@@ -1683,7 +1684,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get(this.w2).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-139.2,-109,267.2,218);
+p.nominalBounds = new cjs.Rectangle(-154.8,-144.7,298.4,253.7);
 
 
 (lib.t5 = function(mode,startPosition,loop) {
@@ -1761,7 +1762,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get(this.bird1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-133.6,-109,278.5,218);
+p.nominalBounds = new cjs.Rectangle(-149.2,-144.7,309.7,253.7);
 
 
 (lib.content = function(mode,startPosition,loop) {
@@ -1778,10 +1779,10 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		var time4 = time3+3.0;
 		
 		TweenMax.to(r.bg, 0.9, {x:"-=8", yoyo:false, repeat:-1, repeatDelay:0.0, ease:Power0.easeNone}, 0.0)
-		var dlit = 0.13
-		var del = 0.13
+		var dlit = 0.15
+		var del = 0.15
 		//var ease = Power0.easeNone
-		var ease = Sine.easeInOut
+		var ease = Sine.easeIn
 		//wings
 		TweenMax.to(r.birdCont.bird1.w1, dlit, {rotation:"-=60", scaleY:0.5, yoyo:true, repeat:-1, repeatDelay:0.0, ease:ease}, 0.0)
 		TweenMax.to(r.birdCont.bird1.w1.w2, dlit, {rotation:"-=50", scaleY:0.3, yoyo:true, repeat:-1, repeatDelay:0.0, ease:ease}, del)
