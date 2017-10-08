@@ -1708,11 +1708,11 @@ p.nominalBounds = new cjs.Rectangle(-154.8,-144.7,298.4,253.7);
 
 
 (lib.t5 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 2
 	this.nov = new lib.Symbol29();
-	this.nov.setTransform(-119,-9);
+	this.nov.setTransform(-117,-9);
 
 	this.timeline.addTween(cjs.Tween.get(this.nov).wait(1));
 
@@ -1741,7 +1741,7 @@ p.nominalBounds = new cjs.Rectangle(-154.8,-144.7,298.4,253.7);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.t3},{t:this.t4},{t:this.t5}]}).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-159.5,-58,321.9,94);
+p.nominalBounds = new cjs.Rectangle(-157.5,-58,319.9,94);
 
 
 (lib.t3 = function(mode,startPosition,loop) {
