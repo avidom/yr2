@@ -1778,8 +1778,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		var time4 = time3+3.0;
 		
 		TweenMax.to(r.bg, 0.9, {x:"-=8", yoyo:false, repeat:-1, repeatDelay:0.0, ease:Power0.easeNone}, 0.0)
-		var dlit = 0.3
-		var del = 0.3
+		var dlit = 0.13
+		var del = 0.13
 		//var ease = Power0.easeNone
 		var ease = Sine.easeInOut
 		//wings
@@ -1788,11 +1788,11 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		TweenMax.to(r.birdCont.bird1.w2, dlit, {rotation:"-=60", scaleY:0.5, yoyo:true, repeat:-1, repeatDelay:0.0, ease:ease}, 0.0)
 		TweenMax.to(r.birdCont.bird1.w2.w2, dlit, {rotation:"-=50", scaleY:0.3, yoyo:true, repeat:-1, repeatDelay:0.0, ease:ease}, del)
 		//body
-		TweenMax.to(r.birdCont.bird1, 0.7, {x:"-=50", yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
-		TweenMax.to(r.birdCont.bird1, 0.9, {y:"-=50", yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
+		TweenMax.to(r.birdCont.bird1, 0.5, {x:"-=50", yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
+		TweenMax.to(r.birdCont.bird1, 0.6, {y:"-=80", yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
 		//tail
-		TweenMax.to(r.birdCont.bird1.tail, 0.8, {scaleX:0.9, yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
-		TweenMax.to(r.birdCont.bird1.tail, 0.45, {scaleY:0.9, yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
+		//TweenMax.to(r.birdCont.bird1.tail, 0.8, {scaleX:0.9, yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
+		//TweenMax.to(r.birdCont.bird1.tail, 0.45, {scaleY:0.9, yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
 		
 		//wings
 		TweenMax.to(r.birdCont.bird2.w1, dlit, {rotation:"-=60", scaleY:0.5, yoyo:true, repeat:-1, repeatDelay:0.0, ease:ease}, 0.0)
@@ -1800,11 +1800,11 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		TweenMax.to(r.birdCont.bird2.w2, dlit, {rotation:"-=60", scaleY:0.5, yoyo:true, repeat:-1, repeatDelay:0.0, ease:ease}, 0.0)
 		TweenMax.to(r.birdCont.bird2.w2.w2, dlit, {rotation:"-=50", scaleY:0.3, yoyo:true, repeat:-1, repeatDelay:0.0, ease:ease}, del)
 		//body
-		TweenMax.to(r.birdCont.bird2, 0.7, {x:"-=50", yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
-		TweenMax.to(r.birdCont.bird2, 0.9, {y:"-=50", yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
+		TweenMax.to(r.birdCont.bird2, 0.5, {x:"-=50", yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
+		TweenMax.to(r.birdCont.bird2, 0.6, {y:"-=80", yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
 		//tail
-		TweenMax.to(r.birdCont.bird2.tail, 0.8, {scaleX:0.9, yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
-		TweenMax.to(r.birdCont.bird2.tail, 0.45, {scaleY:0.9, yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
+		//TweenMax.to(r.birdCont.bird2.tail, 0.8, {scaleX:0.9, yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
+		//TweenMax.to(r.birdCont.bird2.tail, 0.45, {scaleY:0.9, yoyo:true, repeat:-1, repeatDelay:0.0, ease:Sine.easeInOut}, 0.0)
 		
 		
 		var tl = new TimelineLite();
@@ -1813,27 +1813,37 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		  .from(r.birdCont.bird1.tail, 1.5, {scaleY:0.3, ease:Expo.easeOut}, 2.0)
 		  
 		  //upright corner
-		  .to(r.birdCont, 1.0, {x:"+=160", y:"-=100", scaleX:0.5, scaleY:0.5, ease:Sine.easeInOut}, 3.0)
-		  .to(r.birdCont, 0.5, {rotation:"+=30", ease:Sine.easeIn}, 3.0)
-		  .to(r.birdCont, 0.5, {rotation:"-=30", ease:Sine.easeOut}, 3.5)
+		  .to(r.birdCont, 1.0, {x:"+=160", y:"-=90", scaleX:0.5, scaleY:0.5, ease:Sine.easeInOut}, 3.0)
+		  .to(r.birdCont, 0.5, {rotation:"+=20", ease:Sine.easeIn}, 3.0)
+		  .to(r.birdCont, 0.5, {rotation:"-=20", ease:Sine.easeOut}, 3.5)
 		  .to(r.birdCont.bird1, 1.0, {alpha:0, ease:Expo.easeInOut}, 3.0)
 		  .from(r.birdCont.bird2, 1.0, {alpha:0, ease:Expo.easeInOut}, 3.0)
+		  .to(r.birdCont.bird1.tail, 0.5, {scaleY:0.3, ease:Sine.easeIn}, 3.0)
+		  .to(r.birdCont.bird1.tail, 0.5, {scaleY:1.0, ease:Sine.easeOut}, 3.5)
+		  .to(r.birdCont.bird2.tail, 0.5, {scaleY:0.3, ease:Sine.easeIn}, 3.0)
+		  .to(r.birdCont.bird2.tail, 0.5, {scaleY:1.0, ease:Sine.easeOut}, 3.5)
 		  
 		  //downright corner
-		  .to(r.birdCont, 1.0, {x:"+=40", y:"+=60", scaleX:0.6, scaleY:0.6, ease:Sine.easeInOut}, 5.0)
+		  .to(r.birdCont, 1.0, {x:"+=40", y:"+=80", scaleX:0.6, scaleY:0.6, ease:Sine.easeInOut}, 5.0)
 		  .to(r.birdCont, 0.5, {rotation:"-=10", ease:Sine.easeIn}, 5.0)
 		  .to(r.birdCont, 0.5, {rotation:"+=10", ease:Sine.easeOut}, 5.5)
+		  .to(r.birdCont.bird2.tail, 0.5, {scaleY:0.3, ease:Sine.easeIn}, 5.0)
+		  .to(r.birdCont.bird2.tail, 0.5, {scaleY:1.0, ease:Sine.easeOut}, 5.5)
 		  
 		  //upleft corner
-		  .to(r.birdCont, 2.0, {x:"-=200", y:"-=30", scaleX:0.45, scaleY:0.45, ease:Sine.easeInOut}, 6.0)
-		  .to(r.birdCont, 1.0, {rotation:"-=30", ease:Sine.easeIn}, 6.0)
-		  .to(r.birdCont, 1.0, {rotation:"+=30", ease:Sine.easeOut}, 7.0)
+		  .to(r.birdCont, 2.0, {x:"-=200", y:"-=40", scaleX:0.45, scaleY:0.45, ease:Sine.easeInOut}, 6.0)
+		  .to(r.birdCont, 1.0, {rotation:"-=10", ease:Sine.easeIn}, 6.0)
+		  .to(r.birdCont, 1.0, {rotation:"+=10", ease:Sine.easeOut}, 7.0)
 		  .to(r.birdCont.bird1, 2.0, {alpha:1, ease:Expo.easeInOut}, 6.0)
 		  .to(r.birdCont.bird2, 2.0, {alpha:0, ease:Expo.easeInOut}, 6.0)
+		  .to(r.birdCont.bird1.tail, 1.0, {scaleY:0.5, ease:Sine.easeIn}, 6.0)
+		  .to(r.birdCont.bird1.tail, 1.0, {scaleY:1.0, ease:Sine.easeOut}, 7.0)
+		  .to(r.birdCont.bird2.tail, 1.0, {scaleY:0.5, ease:Sine.easeIn}, 6.0)
+		  .to(r.birdCont.bird2.tail, 1.0, {scaleY:1.0, ease:Sine.easeOut}, 7.0)
 		  
 		  //leave
 		  .to(r.birdCont, 1.4, {x:160, y:"-=730", scaleX:4, scaleY:4, ease:Expo.easeInOut}, 8.2)
-		  
+		  .to(r.birdCont.bird1.tail, 1.0, {scaleX:0.2, rotation:"+=40", ease:Expo.easeInOut}, 8.2)
 		  
 		  ////upright corner
 		  //.to(r.birdCont, 1.0, {x:"+=150", y:"-=40", scaleX:0.4, scaleY:0.4, ease:Expo.easeInOut}, 3.0)
